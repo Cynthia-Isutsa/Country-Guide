@@ -1,6 +1,8 @@
 :root{
     --background: #9bb5ca;
     --white: #ffffff;
+    --shadow: rgba(8, 21, 65, 0.25);
+    --button: rgb(66, 66, 179);
 }
 *{
     padding: 0;
@@ -19,4 +21,28 @@ body{
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    border-radius: 0.62rem;
+    box-shadow: 0 1.25rem 1.8rem var(--shadow);
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25rem;
+}
+.search button{
+    font-size: 1rem;
+    background-color:var(--button) ;
+    color: var(--white);
+    border: none;
+    border-radius: 1.5rem;
+}
+.search input{
+    font-size: 1rem;
+    padding: 0 0.62rem;
+    border: none;
+    outline:none;
+    border-bottom: 1px solid black;
+    color: var(--shadow);
+
 }
